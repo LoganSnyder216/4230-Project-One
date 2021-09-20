@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_globalVariableDeclaration",
+  "name": "scr_global_variable_declaration",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_room_goto_btn",
+    "path": "objects/obj_room_goto_btn/obj_room_goto_btn.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -17,17 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"linked_room","path":"objects/obj_room_goto_btn/obj_room_goto_btn.yy",},"objectId":{"name":"obj_room_goto_btn","path":"objects/obj_room_goto_btn/obj_room_goto_btn.yy",},"value":"rm_credits","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Buttons",
     "path": "folders/Objects/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_instructionsBtn",
+  "name": "obj_credits_btn",
   "tags": [],
   "resourceType": "GMObject",
 }

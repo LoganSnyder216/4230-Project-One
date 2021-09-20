@@ -46,7 +46,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_startScreen",
+  "name": "rm_start_screen",
   "tags": [],
   "resourceType": "GMRoom",
 }

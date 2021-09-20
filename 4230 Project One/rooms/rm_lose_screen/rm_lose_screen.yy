@@ -46,7 +46,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_loseScreen",
+  "name": "rm_lose_screen",
   "tags": [],
   "resourceType": "GMRoom",
 }

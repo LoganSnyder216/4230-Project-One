@@ -5,8 +5,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_room_goto_btn",
-    "path": "objects/obj_room_goto_btn/obj_room_goto_btn.yy",
+    "name": "obj_btn_room_goto",
+    "path": "objects/obj_btn_room_goto/obj_btn_room_goto.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,14 +23,14 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"linked_room","path":"objects/obj_room_goto_btn/obj_room_goto_btn.yy",},"objectId":{"name":"obj_room_goto_btn","path":"objects/obj_room_goto_btn/obj_room_goto_btn.yy",},"value":"rm_credits","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"linked_room","path":"objects/obj_btn_room_goto/obj_btn_room_goto.yy",},"objectId":{"name":"obj_btn_room_goto","path":"objects/obj_btn_room_goto/obj_btn_room_goto.yy",},"value":"rm_instructions","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Buttons",
     "path": "folders/Objects/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_credits_btn",
+  "name": "obj_btn_instructions",
   "tags": [],
   "resourceType": "GMObject",
 }

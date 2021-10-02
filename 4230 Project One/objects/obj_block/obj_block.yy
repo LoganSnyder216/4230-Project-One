@@ -1,6 +1,6 @@
 {
   "spriteId": null,
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -21,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Terrain",
+    "path": "folders/Objects/Terrain.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_block",
   "tags": [],
   "resourceType": "GMObject",
 }

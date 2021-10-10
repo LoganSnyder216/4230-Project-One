@@ -1,8 +1,11 @@
 {
   "spriteId": null,
-  "solid": true,
+  "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_platform",
+    "path": "sprites/spr_platform/spr_platform.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

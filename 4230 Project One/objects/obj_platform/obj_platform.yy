@@ -3,7 +3,7 @@
     "name": "spr_platform",
     "path": "sprites/spr_platform/spr_platform.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

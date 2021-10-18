@@ -4,7 +4,9 @@ function scr_enum_definitions(){
 	//Enum Definitions
 	enum e_player_state
 	{
-		neutral
+		idle,
+		jumping,
+		attacking
 	}
 
 }

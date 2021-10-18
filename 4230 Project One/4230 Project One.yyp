@@ -9,6 +9,7 @@
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":2,},
     {"id":{"name":"obj_btn_credits","path":"objects/obj_btn_credits/obj_btn_credits.yy",},"order":1,},
     {"id":{"name":"rm_win_screen","path":"rooms/rm_win_screen/rm_win_screen.yy",},"order":1,},
+    {"id":{"name":"spr_background_dark","path":"sprites/spr_background_dark/spr_background_dark.yy",},"order":6,},
     {"id":{"name":"scr_macro_definitions","path":"scripts/scr_macro_definitions/scr_macro_definitions.yy",},"order":2,},
     {"id":{"name":"tile_platforms","path":"tilesets/tile_platforms/tile_platforms.yy",},"order":0,},
     {"id":{"name":"spr_vaccine_boi","path":"sprites/spr_vaccine_boi/spr_vaccine_boi.yy",},"order":0,},

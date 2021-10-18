@@ -16,6 +16,7 @@
 	if ((tilemap_get_at_pixel(tile_map, bbox_left, bbox_bottom + 2) != 0) or (tilemap_get_at_pixel(tile_map, bbox_right, bbox_bottom + 2) != 0))
 	{
 		_on_ground = 1;
+		global.player_state = e_player_state.idle;
 	}
 
 #endregion
@@ -26,7 +27,7 @@
 	h_move_speed = (_h_move_direction) * base_speed;
 	
 	//Reduce the horizontal speed when not on the ground
-	if (!_on_ground)
+	if (global.player_state == e_player_state.jumping)
 	{
 		//h_move_speed = h_move_speed / 1.75;
 	}
@@ -41,6 +42,7 @@
 		if (_on_ground)
 		{
 			v_move_speed = -jump_height;
+			global.player_state = e_player_state.jumping;
 		}
 	}
 	
@@ -51,30 +53,13 @@
 	float in the air for a moment,
 	and then quickly fall back down.
 	*/
-	if (v_move_speed < -8)
-	{
-		grav = 1.6;
-	}
-	else if (v_move_speed < -4)
-	{
-		grav = 0.8;
-	}
-	else if (v_move_speed < 0)
-	{
-		grav = 0.2;
-	}
-	else if (v_move_speed < 4)
-	{
-		grav = 0.8;
-	}
-	else
-	{
-		grav = 1.6;
-	}
-	
 	if (_on_ground)
 	{
 		grav = 0;
+	}
+	else
+	{
+		grav = 0.28;
 	}
 	
 	//Vertical speed calculation

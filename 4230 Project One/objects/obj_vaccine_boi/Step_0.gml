@@ -59,7 +59,7 @@
 	}
 	else
 	{
-		grav = 0.28;
+		grav = 1.05;
 	}
 	
 	//Vertical speed calculation

@@ -5,8 +5,9 @@
 	//Keys
 	var _left = keyboard_check(ord("A")) or keyboard_check(vk_left);
 	var _right = keyboard_check(ord("D")) or keyboard_check(vk_right);
-	var _up = keyboard_check(ord("W")) or keyboard_check(vk_up);
+	var _up = keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up);
 	var _down = keyboard_check(ord("S")) or keyboard_check(vk_down);
+	var _space = keyboard_check(vk_space);
 	
 	//Horizontal Movement Direction
 	var _h_move_direction = (_right - _left);
@@ -26,12 +27,6 @@
 	//Horizontal speed calculation
 	h_move_speed = (_h_move_direction) * base_speed;
 	
-	//Reduce the horizontal speed when not on the ground
-	if (global.player_state == e_player_state.jumping)
-	{
-		//h_move_speed = h_move_speed / 1.75;
-	}
-	
 #endregion
 
 #region Vertical Movement Calculation
@@ -46,20 +41,21 @@
 		}
 	}
 	
-	/*
-	Apply gravity based on the stage of the jump.
-	Needs some tweaking to get the jump feeling right.
-	Vaccine Boi should move up quickly,
-	float in the air for a moment,
-	and then quickly fall back down.
-	*/
+	//Apply gravity based on the stage of the jump.
 	if (_on_ground)
 	{
 		grav = 0;
 	}
 	else
 	{
-		grav = 1.05;
+		if (v_move_speed < 0)
+		{
+			grav = 0.875;
+		}
+		else
+		{
+			grav = 2.625;
+		}
 	}
 	
 	//Vertical speed calculation
@@ -208,7 +204,10 @@
 
 #region Attacking
 	
-	
+	if (_space and !instance_exists(obj_syr_inge))
+	{
+		instance_create_layer(x, y, "Instances", obj_syr_inge);
+	}
 	
 #endregion
 

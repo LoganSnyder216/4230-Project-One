@@ -30,6 +30,7 @@
     {"id":{"name":"obj_enemy_1","path":"objects/obj_enemy_1/obj_enemy_1.yy",},"order":1,},
     {"id":{"name":"obj_parent_enemy","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},"order":0,},
     {"id":{"name":"spr_vaccine_boi_walking","path":"sprites/spr_vaccine_boi_walking/spr_vaccine_boi_walking.yy",},"order":1,},
+    {"id":{"name":"spr_syr_inge","path":"sprites/spr_syr_inge/spr_syr_inge.yy",},"order":7,},
     {"id":{"name":"rm_instructions","path":"rooms/rm_instructions/rm_instructions.yy",},"order":4,},
     {"id":{"name":"rm_start_screen","path":"rooms/rm_start_screen/rm_start_screen.yy",},"order":0,},
   ],

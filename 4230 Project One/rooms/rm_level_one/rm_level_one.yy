@@ -15,9 +15,15 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_vaccine_boi","path":"objects/obj_vaccine_boi/obj_vaccine_boi.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":2240.0,"resourceVersion":"1.0","name":"inst_B83E1B5","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_white_blood_cell","path":"objects/obj_white_blood_cell/obj_white_blood_cell.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3520.0,"y":2240.0,"resourceVersion":"1.0","name":"inst_716EAB3","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":64,"gridY":64,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_1","path":"objects/obj_enemy_1/obj_enemy_1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2560.0,"y":2240.0,"resourceVersion":"1.0","name":"inst_10F4B87","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_virus_ball","path":"objects/obj_enemy_virus_ball/obj_enemy_virus_ball.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2560.0,"y":2240.0,"resourceVersion":"1.0","name":"inst_10F4B87","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_virus_ball","path":"objects/obj_enemy_virus_ball/obj_enemy_virus_ball.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1536.0,"y":2240.0,"resourceVersion":"1.0","name":"inst_64E08B0","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_virus_ball","path":"objects/obj_enemy_virus_ball/obj_enemy_virus_ball.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2240.0,"y":2240.0,"resourceVersion":"1.0","name":"inst_65536B81","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_virus_ball","path":"objects/obj_enemy_virus_ball/obj_enemy_virus_ball.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1024.0,"y":2240.0,"resourceVersion":"1.0","name":"inst_6D77CA31","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_killer_t","path":"objects/obj_killer_t/obj_killer_t.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2880.0,"y":2240.0,"resourceVersion":"1.0","name":"inst_77C8DDF0","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_killer_t","path":"objects/obj_killer_t/obj_killer_t.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2624.0,"y":1728.0,"resourceVersion":"1.0","name":"inst_422F97DE","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":64,"gridY":64,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tile_collisions","path":"tilesets/tile_collisions/tile_collisions.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":30,"SerialiseHeight":20,"TileSerialiseData":[
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -71,6 +77,12 @@
   "instanceCreationOrder": [
     {"name":"inst_B83E1B5","path":"rooms/rm_level_one/rm_level_one.yy",},
     {"name":"inst_10F4B87","path":"rooms/rm_level_one/rm_level_one.yy",},
+    {"name":"inst_64E08B0","path":"rooms/rm_level_one/rm_level_one.yy",},
+    {"name":"inst_65536B81","path":"rooms/rm_level_one/rm_level_one.yy",},
+    {"name":"inst_6D77CA31","path":"rooms/rm_level_one/rm_level_one.yy",},
+    {"name":"inst_77C8DDF0","path":"rooms/rm_level_one/rm_level_one.yy",},
+    {"name":"inst_422F97DE","path":"rooms/rm_level_one/rm_level_one.yy",},
+    {"name":"inst_716EAB3","path":"rooms/rm_level_one/rm_level_one.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

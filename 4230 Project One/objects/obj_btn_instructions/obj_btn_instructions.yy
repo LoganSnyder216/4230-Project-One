@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_button",
+    "path": "sprites/spr_button/spr_button.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -175,32 +175,7 @@
 	
 #endregion
 
- #region Sprite Manipulation
-	
-	//Flip sprite in the direction of movement
-	if (_h_move_direction != 0)
-	{
-		image_xscale = (_h_move_direction);
-	}
-	
-	//Set sprite to idle or walking
-	if (_on_ground)
-	{
-		if (h_move_speed == 0)
-		{
-			sprite_index = spr_vaccine_boi;
-		}
-		else
-		{
-			sprite_index = spr_vaccine_boi_walking;
-		}
-	}
-	else
-	{
-		sprite_index = spr_vaccine_boi;
-	}
-	
-#endregion
+
 
 #region Attacking
 	
@@ -211,3 +186,36 @@
 	
 #endregion
 
+ #region Sprite Manipulation
+	
+	//Flip sprite in the direction of movement
+	if (_h_move_direction != 0)
+	{
+		image_xscale = (_h_move_direction);
+	}
+	
+	if (instance_exists(obj_syr_inge))
+	{
+		//sprite_index = spr_swinging;
+	}
+	else
+	{
+		//Set sprite to idle or walking
+		if (_on_ground)
+		{
+			if (h_move_speed == 0)
+			{
+				sprite_index = spr_vaccine_boi;
+			}
+			else
+			{
+				sprite_index = spr_vaccine_boi_walking;
+			}
+		}
+		else
+		{
+			sprite_index = spr_vaccine_boi;
+		}
+	}
+	
+#endregion

@@ -7,14 +7,14 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 10,
-  "bbox_right": 122,
-  "bbox_top": 9,
-  "bbox_bottom": 122,
+  "bbox_left": 0,
+  "bbox_right": 529,
+  "bbox_top": 0,
+  "bbox_bottom": 127,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 128,
+  "width": 530,
   "height": 128,
   "textureGroupId": {
     "name": "Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0a695606-e607-4c48-9cb9-f0ff8419d42d","path":"sprites/spr_syringe/spr_syringe.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0a695606-e607-4c48-9cb9-f0ff8419d42d","path":"sprites/spr_syringe/spr_syringe.yy",},"LayerId":{"name":"2af84de4-e7a3-41c4-b70e-c77c0eddfb80","path":"sprites/spr_syringe/spr_syringe.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_syringe","path":"sprites/spr_syringe/spr_syringe.yy",},"resourceVersion":"1.0","name":"0a695606-e607-4c48-9cb9-f0ff8419d42d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"515cbb96-5b37-42ed-8e6d-a7e1ad73d402","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"515cbb96-5b37-42ed-8e6d-a7e1ad73d402","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":{"name":"ec2af849-7fe5-415a-8bae-17250878359e","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"515cbb96-5b37-42ed-8e6d-a7e1ad73d402","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_syringe","path":"sprites/spr_syringe/spr_syringe.yy",},
+    "spriteId": {"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3889baed-022a-4263-8a6b-fd8260e37163","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a695606-e607-4c48-9cb9-f0ff8419d42d","path":"sprites/spr_syringe/spr_syringe.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"002fc793-0235-4349-aebb-89a177362059","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"515cbb96-5b37-42ed-8e6d-a7e1ad73d402","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,18 +54,18 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 64,
+    "xorigin": 265,
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_syringe","path":"sprites/spr_syringe/spr_syringe.yy",},
+    "parent": {"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_syringe",
+    "name": "spr_white_blood_cell",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2af84de4-e7a3-41c4-b70e-c77c0eddfb80","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ec2af849-7fe5-415a-8bae-17250878359e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_syringe",
+  "name": "spr_white_blood_cell",
   "tags": [],
   "resourceType": "GMSprite",
 }

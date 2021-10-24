@@ -175,8 +175,6 @@
 	
 #endregion
 
-
-
 #region Attacking
 	
 	if (_space and !instance_exists(obj_syr_inge))

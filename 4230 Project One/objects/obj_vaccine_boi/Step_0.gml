@@ -2,13 +2,13 @@
 
 #region Player Input
 	
-	//Keys
+	//Check which keys the player is pressing
 	var _left = keyboard_check(ord("A")) or keyboard_check(vk_left);
 	var _right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 	var _up = keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up);
 	var _space = keyboard_check(vk_space);
 	
-	//Horizontal Movement Direction
+	//Horizontal movement direction
 	var _h_move_direction = (_right - _left);
 	
 	//Check if the player is on the ground
@@ -38,23 +38,26 @@
 
 #region Vertical Movement Calculation
 	
-	//Jumping
+	//Jump if the player is on the ground and not attacking
 	if (_up and _on_ground and !_attacking)
 	{
 		v_move_speed = -jump_height;
 	}
 	
-	//Apply gravity based on the stage of the jump.
+	//Set gravity to zero when the player is on the ground
 	if (_on_ground)
 	{
 		grav = 0;
 	}
+	//Set gravity based on the stage of the jump
 	else
 	{
+		//Before the apex of the jump
 		if (v_move_speed < 0)
 		{
 			grav = 0.875;
 		}
+		//Triple gravity after the apex of the jump
 		else
 		{
 			grav = 2.625;
@@ -71,72 +74,88 @@
 
 #region Collision
 	
-	//Bounding box in the direction of movement
+	//Bounding box in the direction of movement, used to check for collisions
 	var _bbox;
 	
-	//Horizontal tilemap collision
+	//Variable to hold the player's horizontal speed as an integer
 	var _int_h_move_speed;
 	
-	if (h_move_speed > 0)
-	{
-		_bbox = bbox_right;
-		_int_h_move_speed = ceil(h_move_speed);
-	}
-	else
-	{
-		_bbox = bbox_left;
-		_int_h_move_speed = floor(h_move_speed);
-	}
-	
-	if ((tilemap_get_at_pixel(tile_map, _bbox + _int_h_move_speed, bbox_top) != 0) or (tilemap_get_at_pixel(tile_map, _bbox + _int_h_move_speed, bbox_bottom) != 0))
-	{
-		//Snap to grid
-		//If moving right
-		if (h_move_speed > 0)
-		{
-			x = x - (x mod tile_size) + (tile_size - 1) - (bbox_right - x);
-		}
-		//If moving left
-		else
-		{
-			x = x - (x mod tile_size) - (bbox_left - x);
-		}
-		
-		h_move_speed = 0;
-		_int_h_move_speed = 0;
-	}
-	
-	//Vertical tilemap collision
+	//Variable to hold the player's vertical speed as an integer
 	var _int_v_move_speed;
 	
-	if (v_move_speed > 0)
-	{
-		_bbox = bbox_bottom;
-		_int_v_move_speed = ceil(v_move_speed);
-	}
-	else
-	{
-		_bbox = bbox_top;
-		_int_v_move_speed = floor(v_move_speed);
-	}
-	
-	if ((tilemap_get_at_pixel(tile_map, bbox_left, _bbox + _int_v_move_speed) != 0) or (tilemap_get_at_pixel(tile_map, bbox_right, _bbox + _int_v_move_speed) != 0))
-	{
-		//Snap to grid
-		//If moving down
-		if (v_move_speed > 0)
+	#region Horizontal Tilemap Collision
+		
+		//Get the bounding box when moving right
+		if (h_move_speed > 0)
 		{
-			y = y - (y mod tile_size) + (tile_size - 1) - (bbox_bottom - y);
+			_bbox = bbox_right;
+			_int_h_move_speed = ceil(h_move_speed);
 		}
-		//If moving up
+		//Get the bounding box when moving left
 		else
 		{
-			y = y - (y mod tile_size) - (bbox_top - y);
+			_bbox = bbox_left;
+			_int_h_move_speed = floor(h_move_speed);
 		}
+	
+		//Check for a collision with the collision tile map
+		if ((tilemap_get_at_pixel(tile_map, _bbox + _int_h_move_speed, bbox_top) != 0) or (tilemap_get_at_pixel(tile_map, _bbox + _int_h_move_speed, bbox_bottom) != 0))
+		{
+			//Snap to grid
+			//If moving right
+			if (h_move_speed > 0)
+			{
+				x = x - (x mod tile_size) + (tile_size - 1) - (bbox_right - x);
+			}
+			//If moving left
+			else
+			{
+				x = x - (x mod tile_size) - (bbox_left - x);
+			}
 		
-		v_move_speed = 0;
-		_int_v_move_speed = 0;
-	}
+			//Set horizontal speed to zero when colliding
+			h_move_speed = 0;
+			_int_h_move_speed = 0;
+		}
+	
+	#endregion
+	
+	#region Vertical tilemap collision
+		
+		//Get the bounding box when moving down
+		if (v_move_speed > 0)
+		{
+			_bbox = bbox_bottom;
+			_int_v_move_speed = ceil(v_move_speed);
+		}
+		//Get the bounding box when moving up
+		else
+		{
+			_bbox = bbox_top;
+			_int_v_move_speed = floor(v_move_speed);
+		}
+	
+		//Check for a collision with the collision tile map
+		if ((tilemap_get_at_pixel(tile_map, bbox_left, _bbox + _int_v_move_speed) != 0) or (tilemap_get_at_pixel(tile_map, bbox_right, _bbox + _int_v_move_speed) != 0))
+		{
+			//Snap to grid
+			//If moving down
+			if (v_move_speed > 0)
+			{
+				y = y - (y mod tile_size) + (tile_size - 1) - (bbox_bottom - y);
+			}
+			//If moving up
+			else
+			{
+				y = y - (y mod tile_size) - (bbox_top - y);
+			}
+		
+			//Set vertical speed to zero when colliding
+			v_move_speed = 0;
+			_int_v_move_speed = 0;
+		}
+	
+	#endregion
 	
 #endregion
 
@@ -154,6 +173,7 @@
 
 #region Attacking
 	
+	//Attack if the player is on the ground and not already attacking
 	if (_space and _on_ground and !_attacking)
 	{
 		instance_create_layer(x, y, "Instances", obj_syringe);
@@ -164,10 +184,12 @@
 
  #region Sprite Manipulation
 	
+	//Set sprite to attacking if the player is attacking
 	if (_attacking)
 	{
 		sprite_index = spr_swinging;
 	}
+	//If not attacking, set sprite based on the player's movement
 	else
 	{
 		//Flip sprite in the direction of movement

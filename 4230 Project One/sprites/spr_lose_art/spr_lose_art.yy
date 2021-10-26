@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"949be1c0-9a61-440f-9e85-a6d10a300382","path":"sprites/spr_cover_art/spr_cover_art.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"949be1c0-9a61-440f-9e85-a6d10a300382","path":"sprites/spr_cover_art/spr_cover_art.yy",},"LayerId":{"name":"13b094a8-2ed9-4c78-a086-58b71361f7ea","path":"sprites/spr_cover_art/spr_cover_art.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cover_art","path":"sprites/spr_cover_art/spr_cover_art.yy",},"resourceVersion":"1.0","name":"949be1c0-9a61-440f-9e85-a6d10a300382","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c77726a9-501c-4ad9-9d13-64df37fdd140","path":"sprites/spr_lose_art/spr_lose_art.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c77726a9-501c-4ad9-9d13-64df37fdd140","path":"sprites/spr_lose_art/spr_lose_art.yy",},"LayerId":{"name":"a64b8227-6cba-410b-89fe-cef65b2efea8","path":"sprites/spr_lose_art/spr_lose_art.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_lose_art","path":"sprites/spr_lose_art/spr_lose_art.yy",},"resourceVersion":"1.0","name":"c77726a9-501c-4ad9-9d13-64df37fdd140","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cover_art","path":"sprites/spr_cover_art/spr_cover_art.yy",},
+    "spriteId": {"name":"spr_lose_art","path":"sprites/spr_lose_art/spr_lose_art.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b90119f2-5410-4a28-b027-129091c156f1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"949be1c0-9a61-440f-9e85-a6d10a300382","path":"sprites/spr_cover_art/spr_cover_art.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8e13e44e-2aa0-4ab6-ae59-31e6d9d57693","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c77726a9-501c-4ad9-9d13-64df37fdd140","path":"sprites/spr_lose_art/spr_lose_art.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 540,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cover_art","path":"sprites/spr_cover_art/spr_cover_art.yy",},
+    "parent": {"name":"spr_lose_art","path":"sprites/spr_lose_art/spr_lose_art.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_cover_art",
+    "name": "spr_lose_art",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"13b094a8-2ed9-4c78-a086-58b71361f7ea","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a64b8227-6cba-410b-89fe-cef65b2efea8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Art.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_cover_art",
+  "name": "spr_lose_art",
   "tags": [],
   "resourceType": "GMSprite",
 }

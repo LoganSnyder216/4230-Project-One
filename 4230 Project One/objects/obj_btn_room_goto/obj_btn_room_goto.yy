@@ -26,10 +26,10 @@
     {"varType":5,"value":"rm_start_screen","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMRoom",
       ],"resourceVersion":"1.0","name":"linked_room","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"spr_button","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+    {"varType":5,"value":"spr_btn_start_screen","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMSprite",
       ],"resourceVersion":"1.0","name":"main_sprite","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"spr_button","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+    {"varType":5,"value":"spr_btn_start_screen","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMSprite",
       ],"resourceVersion":"1.0","name":"alt_sprite","tags":[],"resourceType":"GMObjectProperty",},
   ],

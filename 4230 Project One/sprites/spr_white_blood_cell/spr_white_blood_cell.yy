@@ -8,13 +8,13 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 529,
+  "bbox_right": 128,
   "bbox_top": 0,
   "bbox_bottom": 127,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 530,
+  "width": 129,
   "height": 128,
   "textureGroupId": {
     "name": "Default",
@@ -24,24 +24,36 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"515cbb96-5b37-42ed-8e6d-a7e1ad73d402","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"515cbb96-5b37-42ed-8e6d-a7e1ad73d402","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":{"name":"ec2af849-7fe5-415a-8bae-17250878359e","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"515cbb96-5b37-42ed-8e6d-a7e1ad73d402","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9b83ef92-f235-4ac1-b1c9-eb87a1b607b8","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9b83ef92-f235-4ac1-b1c9-eb87a1b607b8","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":{"name":"a166f020-600a-4811-8852-f72cd58f2083","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"9b83ef92-f235-4ac1-b1c9-eb87a1b607b8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cf9a60cb-6cbb-434f-aaf5-2b22ec4f46da","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cf9a60cb-6cbb-434f-aaf5-2b22ec4f46da","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":{"name":"a166f020-600a-4811-8852-f72cd58f2083","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"cf9a60cb-6cbb-434f-aaf5-2b22ec4f46da","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d3000430-388c-4c0f-8746-9751eac5f111","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d3000430-388c-4c0f-8746-9751eac5f111","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":{"name":"a166f020-600a-4811-8852-f72cd58f2083","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"d3000430-388c-4c0f-8746-9751eac5f111","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a5ab5813-031c-4024-a977-8e7a212c0afa","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a5ab5813-031c-4024-a977-8e7a212c0afa","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"LayerId":{"name":"a166f020-600a-4811-8852-f72cd58f2083","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","name":"a5ab5813-031c-4024-a977-8e7a212c0afa","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_white_blood_cell","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 8.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"002fc793-0235-4349-aebb-89a177362059","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"515cbb96-5b37-42ed-8e6d-a7e1ad73d402","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1b2dcac0-3505-4263-a7de-e6f5109b965e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9b83ef92-f235-4ac1-b1c9-eb87a1b607b8","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a59453e2-046f-416a-9205-29bdd22fdb59","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cf9a60cb-6cbb-434f-aaf5-2b22ec4f46da","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"683d685a-de3c-46a6-a274-1f9a6b4e0c4f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3000430-388c-4c0f-8746-9751eac5f111","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8527a5e6-1d41-4008-9a74-0165b6236875","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a5ab5813-031c-4024-a977-8e7a212c0afa","path":"sprites/spr_white_blood_cell/spr_white_blood_cell.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,7 +66,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 265,
+    "xorigin": 64,
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
@@ -65,7 +77,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ec2af849-7fe5-415a-8bae-17250878359e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a166f020-600a-4811-8852-f72cd58f2083","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_button",
-    "path": "sprites/spr_button/spr_button.yy",
+    "name": "spr_btn_instructions",
+    "path": "sprites/spr_btn_instructions/spr_btn_instructions.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,6 +27,8 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"linked_room","path":"objects/obj_btn_room_goto/obj_btn_room_goto.yy",},"objectId":{"name":"obj_btn_room_goto","path":"objects/obj_btn_room_goto/obj_btn_room_goto.yy",},"value":"rm_instructions","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"main_sprite","path":"objects/obj_btn_room_goto/obj_btn_room_goto.yy",},"objectId":{"name":"obj_btn_room_goto","path":"objects/obj_btn_room_goto/obj_btn_room_goto.yy",},"value":"spr_btn_instructions","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"alt_sprite","path":"objects/obj_btn_room_goto/obj_btn_room_goto.yy",},"objectId":{"name":"obj_btn_room_goto","path":"objects/obj_btn_room_goto/obj_btn_room_goto.yy",},"value":"spr_btn_instructions_alt","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Buttons",

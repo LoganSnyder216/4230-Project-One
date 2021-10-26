@@ -2,6 +2,5 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_global_variable_declaration(){
 	//Global Variable Declarations
-	global.player_state = e_player_state.idle;
 	
 }

@@ -6,7 +6,6 @@
 	var _left = keyboard_check(ord("A")) or keyboard_check(vk_left);
 	var _right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 	var _up = keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up);
-	var _down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 	var _space = keyboard_check(vk_space);
 	
 	//Horizontal Movement Direction
@@ -17,8 +16,10 @@
 	if ((tilemap_get_at_pixel(tile_map, bbox_left, bbox_bottom + 2) != 0) or (tilemap_get_at_pixel(tile_map, bbox_right, bbox_bottom + 2) != 0))
 	{
 		_on_ground = 1;
-		global.player_state = e_player_state.idle;
 	}
+	
+	//Check if the player is attacking
+	var _attacking = instance_exists(obj_syringe);
 
 #endregion
 
@@ -27,18 +28,20 @@
 	//Horizontal speed calculation
 	h_move_speed = (_h_move_direction) * base_speed;
 	
+	//Set horizontal speed to zero if the player is attacking
+	if (_attacking)
+	{
+		h_move_speed = 0;
+	}
+	
 #endregion
 
 #region Vertical Movement Calculation
 	
 	//Jumping
-	if (_up)
+	if (_up and _on_ground and !_attacking)
 	{
-		if (_on_ground)
-		{
-			v_move_speed = -jump_height;
-			global.player_state = e_player_state.jumping;
-		}
+		v_move_speed = -jump_height;
 	}
 	
 	//Apply gravity based on the stage of the jump.
@@ -63,32 +66,6 @@
 	
 	//Clamp vertical speed
 	v_move_speed = clamp(v_move_speed, -jump_height, jump_height);
-	
-#endregion
-
-#region Backup Naive Collision
-	
-	//Horizontal collision
-	/*if (place_meeting(x + h_move_speed, y, obj_block))
-	{	
-		while (!place_meeting(x + _h_move_direction, y, obj_block))
-		{
-			x += _h_move_direction;
-		}
-		
-		h_move_speed = 0;
-	}
-	
-	//Vertical collision
-	if (place_meeting(x, y + v_move_speed, obj_block))
-	{
-		while (!place_meeting(x, y + (sign(v_move_speed) * 2), obj_block))
-		{
-			y += sign(v_move_speed);
-		}
-		
-		v_move_speed = 0;
-	}*/
 	
 #endregion
 
@@ -177,27 +154,28 @@
 
 #region Attacking
 	
-	if (_space and !instance_exists(obj_syr_inge))
+	if (_space and _on_ground and !_attacking)
 	{
-		instance_create_layer(x, y, "Instances", obj_syr_inge);
+		instance_create_layer(x, y, "Instances", obj_syringe);
+		_attacking = true;
 	}
 	
 #endregion
 
  #region Sprite Manipulation
 	
-	//Flip sprite in the direction of movement
-	if (_h_move_direction != 0)
+	if (_attacking)
 	{
-		image_xscale = (_h_move_direction);
-	}
-	
-	if (instance_exists(obj_syr_inge))
-	{
-		//sprite_index = spr_swinging;
+		sprite_index = spr_swinging;
 	}
 	else
 	{
+		//Flip sprite in the direction of movement
+		if (_h_move_direction != 0)
+		{
+			image_xscale = (_h_move_direction);
+		}
+		
 		//Set sprite to idle or walking
 		if (_on_ground)
 		{
@@ -210,6 +188,7 @@
 				sprite_index = spr_vaccine_boi_walking;
 			}
 		}
+		//Set sprite to idle when falling
 		else
 		{
 			sprite_index = spr_vaccine_boi;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemy",
-    "path": "sprites/spr_enemy/spr_enemy.yy",
+    "name": "spr_white_blood_cell",
+    "path": "sprites/spr_white_blood_cell/spr_white_blood_cell.yy",
   },
   "solid": false,
   "visible": true,

@@ -173,8 +173,8 @@
 
 #region Attacking
 	
-	//Attack if the player is on the ground and not already attacking
-	if (_space and _on_ground and !_attacking)
+	//Attack if the player is on the ground, not latched, and not already attacking
+	if (_space and _on_ground and !latched and !_attacking)
 	{
 		instance_create_layer(x, y, "Instances", obj_syringe);
 		_attacking = true;

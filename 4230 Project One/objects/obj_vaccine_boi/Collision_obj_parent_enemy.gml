@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-hp--;
+hp -= other.damage;
 
 if (hp <= 0)
 {

@@ -42,6 +42,7 @@
 	if (_up and _on_ground and !_attacking)
 	{
 		v_move_speed = -jump_height;
+		audio_play_sound(snd_vb_jump, 1, false);
 	}
 	
 	//Set gravity to zero when the player is on the ground
@@ -178,6 +179,7 @@
 	{
 		instance_create_layer(x, y, "Instances", obj_syringe);
 		_attacking = true;
+		audio_play_sound(snd_vb_swing, 1, false);
 	}
 	
 #endregion

@@ -38,7 +38,7 @@
     {"varType":0,"value":"640","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"aggro_range","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [
-    {"propertyId":{"name":"damage","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},"objectId":{"name":"obj_parent_enemy","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damage","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},"objectId":{"name":"obj_parent_enemy","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},"value":"10","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Enemies",

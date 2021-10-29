@@ -6,7 +6,7 @@
 	var _left = keyboard_check(ord("A")) or keyboard_check(vk_left);
 	var _right = keyboard_check(ord("D")) or keyboard_check(vk_right);
 	var _up = keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up);
-	var _space = keyboard_check(vk_space);
+	var _space = keyboard_check_pressed(vk_space);
 	
 	//Horizontal movement direction
 	var _h_move_direction = (_right - _left);

@@ -13,10 +13,16 @@ if (keyboard_check(vk_escape))
 }
 
 //Press H to fully heal Vaccine Boi
-if (keyboard_check(ord("H")))
+if (keyboard_check_pressed(ord("H")))
 {
 	if (instance_exists(obj_vaccine_boi))
 	{
 		obj_vaccine_boi.hp = 300;
 	}
+}
+
+//Press K to kill all enemies in the room
+if (keyboard_check_pressed(ord("K")))
+{
+	instance_destroy(obj_parent_enemy);
 }
